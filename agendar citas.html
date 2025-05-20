@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Cita - Dra. Jenny Sarmiento</title>
+  <link rel="stylesheet" href="estilo/ESTILO.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Agendar Cita</h1>
+    <nav>
+      <ul>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="agendar-cita" class="seccion-agendar">
+      <h2>Agenda tu cita</h2>
+      <p class="descripcion-intro">
+        ¿Lista para empezar tu tratamiento? Rellena el siguiente formulario y nos pondremos en contacto contigo lo antes posible.
+      </p>
+
+      <form class="formulario-agenda" action="#" method="post">
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="campo">
+          <label for="fecha">Fecha de la cita</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="campo">
+          <label for="hora">Hora</label>
+          <input type="time" id="hora" name="hora" required>
+        </div>
+
+        <div class="campo">
+          <label for="servicio">Servicio deseado</label>
+          <select id="servicio" name="servicio">
+            <option value="">Selecciona una opción</option>
+            <option>Consulta dermatológica</option>
+            <option>Toxina Botulínica</option>
+            <option>Microblading</option>
+            <option>PRP Capilar</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje adicional (opcional)</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="boton-agendar">Enviar solicitud</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Doctora Jenny Sarmiento. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
